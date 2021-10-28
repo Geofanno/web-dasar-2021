@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Tugas 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h2>Form Biodata</h2></center>
+    <form action="post" method="post">
+       <table>
+           <tr>
+               <td width="200px">NIM</td>
+               <td>:</td>
+               <td><input type="text" size="12"></td>
+           </tr>
+           <tr>
+            <td>NAMA</td>
+            <td>:</td>
+            <td><input type="text" size="30"></td>
+        </tr>
+        <tr>
+            <td>JENIS KELAMIN</td>
+            <td>:</td>
+            <td><input type="radio" name="jk"> Laki-laki
+                <input type="radio" name="jk"> Perempuan
+            </td>
+        </tr>
+        <tr>
+            <td><label for="jurusan">JURUSAN</label></td>
+            <td>:</td>
+            <td><select name="Jurusan">
+                <option value="">Pilih ...</option>
+                <option value="D3SI">D3 SI</option>
+                <option value="S1RPL">S1 RPL</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>HOBBY</td>
+            <td>:</td>
+            <td>
+                <input type="checkbox">Komputer
+                <input type="checkbox">Musik
+                <input type="checkbox">Olahraga
+                <input type="checkbox">Travelling
+            </td>
+        </tr>
+        <tr>
+            <td><label for="catatan">CATATAN</label></td>
+            <td>:</td>
+             <td><textarea required name="" id="" cols="40" rows="6"></textarea></td>
+            
+        </tr>
+        <tr>
+            <td>
+                <label for="">FOTO</label>
+            </td>
+            <td>:</td>
+            <td>
+                <input type="file">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                EMAIL
+            </td>
+            <td>:</td>
+            <td>
+                <input type="text" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                SANDI LOGIN
+            </td>
+            <td>:</td>
+            <td>
+                <input type="password" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ULANGI SANDI LOGIN
+            </td>
+            <td>:</td>
+            <td>
+                <input type="password" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><input type="submit" name="submit" value="Simpan">
+            <input type="reset" value="Batal"> 
+            <input type="submit" name="Peringatan" value="Peringatan"></td>
+        </tr>
+       </table>
+       
+    </form>
+</body>
+</html>
