@@ -1,65 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <title>Tugas 2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
+ 
+
 <body>
-    <center><h2>Form Biodata</h2></center>
+    <div class="container">
+<!-- Content here -->
+    <center><h2>Form Biodata</h2></center> 
     <form action="post" method="post">
        <table>
-           <tr>
-               <td width="200px">NIM</td>
-               <td>:</td>
-               <td><input type="text" size="12"></td>
-           </tr>
-           <tr>
+            <div class="mb-3">
+            <tr>
+                <td width="200px">NIM</td>
+                <td>:</td>
+                <td><input class="form-control" type="text" size="12"></td>
+                </tr>
+            </div>
+            
+            <div class="mb-3">
+        <tr>
             <td>NAMA</td>
             <td>:</td>
-            <td><input type="text" size="30"></td>
+            <td><input class="form-control" type="text" size="30"></td>
         </tr>
+        </div>
+
+        <div class="form-check">
         <tr>
             <td>JENIS KELAMIN</td>
             <td>:</td>
-            <td><input type="radio" name="jk"> Laki-laki
-                <input type="radio" name="jk"> Perempuan
+            <td><input class="form-check-input" type="radio" name="jk"> Laki-laki
+                <input class="form-check-input" type="radio" name="jk"> Perempuan
             </td>
         </tr>
+        <div class="dropdown"></div>
         <tr>
             <td><label for="jurusan">JURUSAN</label></td>
             <td>:</td>
-            <td><select name="Jurusan">
+            <td><select class="btn btn-secondary dropdown-toggle" name="Jurusan">
                 <option value="">Pilih ...</option>
                 <option value="D3SI">D3 SI</option>
                 <option value="S1RPL">S1 RPL</option>
             </select></td>
         </tr>
+        <div class="form-check"></div>
         <tr>
             <td>HOBBY</td>
             <td>:</td>
             <td>
-                <input type="checkbox">Komputer
-                <input type="checkbox">Musik
-                <input type="checkbox">Olahraga
-                <input type="checkbox">Travelling
+                <input class="form-check-input" type="checkbox">Komputer
+                <input class="form-check-input" type="checkbox">Musik
+                <input class="form-check-input" type="checkbox">Olahraga
+                <input class="form-check-input" type="checkbox">Travelling
             </td>
         </tr>
+        <div class="form-floating"></div>
         <tr>
             <td><label for="catatan">CATATAN</label></td>
             <td>:</td>
-             <td><textarea required name="" id="" cols="40" rows="6"></textarea></td>
+             <td><textarea class="form-control" required name="" id="" cols="40" rows="6"></textarea></td>
             
         </tr>
+        <div class="mb-3">
         <tr>
             <td>
                 <label for="">FOTO</label>
             </td>
             <td>:</td>
             <td>
-                <input type="file">
+                <input class="form-control form-control-sm" type="file">
             </td>
         </tr>
+        </div>
+
+        <div class="mb-3">
         <tr>
             <td>
                 EMAIL
@@ -69,6 +92,7 @@
                 <input type="text" size="30">
             </td>
         </tr>
+        </div>
         <tr>
             <td>
                 SANDI LOGIN
@@ -97,5 +121,7 @@
        </table>
        
     </form>
+</div>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
